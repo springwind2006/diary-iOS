@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../&#x4ee3;&#x7801;&#x7247;&#x6bb5;&#x5e93;/LocationPicker/LocationPicker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../macOs&#x5e94;&#x7528;/[Demos]/objcDemo/objcDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:diary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

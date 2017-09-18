@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C27D4DCDFEDA68CA1CD6834 /* libPods-diary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D51CA788DBDB0664E89BCE3 /* libPods-diary.a */; };
+		D52E44541F5CF51900DB5443 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E44531F5CF51900DB5443 /* WebService.m */; };
+		D52E44571F5D347000DB5443 /* DiarySettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E44561F5D347000DB5443 /* DiarySettingView.m */; };
+		D53BA9031F5E323800BC978B /* UIView+RGSize.m in Sources */ = {isa = PBXBuildFile; fileRef = D53BA9021F5E323800BC978B /* UIView+RGSize.m */; };
+		D53BA9241F5E4DCC00BC978B /* PopAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53BA9231F5E4DCC00BC978B /* PopAlterView.m */; };
+		D54A99881F0C13C900140489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A99871F0C13C900140489 /* main.m */; };
+		D54A998B1F0C13C900140489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A998A1F0C13C900140489 /* AppDelegate.m */; };
+		D54A99941F0C13C900140489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54A99921F0C13C900140489 /* Main.storyboard */; };
+		D54A99961F0C13C900140489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54A99951F0C13C900140489 /* Assets.xcassets */; };
+		D54A99991F0C13C900140489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54A99971F0C13C900140489 /* LaunchScreen.storyboard */; };
+		D54A99A41F0C13C900140489 /* diaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A99A31F0C13C900140489 /* diaryTests.m */; };
+		D54A99AF1F0C13C900140489 /* diaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A99AE1F0C13C900140489 /* diaryUITests.m */; };
+		D54A99C51F0CE5EF00140489 /* DiaryListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A99C41F0CE5EF00140489 /* DiaryListView.m */; };
+		D555CF921F0F5BC6006A5E10 /* diary.db in Resources */ = {isa = PBXBuildFile; fileRef = D555CF901F0F5BC6006A5E10 /* diary.db */; };
+		D555CF941F0F6959006A5E10 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D555CF931F0F6959006A5E10 /* FileUtils.m */; };
+		D555CF981F0FD6FF006A5E10 /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D555CF971F0FD6FF006A5E10 /* DiaryModel.m */; };
+		D555CF9B1F0FD953006A5E10 /* DiaryService.m in Sources */ = {isa = PBXBuildFile; fileRef = D555CF9A1F0FD953006A5E10 /* DiaryService.m */; };
+		D555CF9E1F0FE947006A5E10 /* BaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D555CF9D1F0FE947006A5E10 /* BaseUtils.m */; };
+		D5BC07151F5F80A900D8EB2A /* AreaPickerService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC07141F5F80A900D8EB2A /* AreaPickerService.m */; };
+		D5BC07191F5F80BE00D8EB2A /* AreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC07171F5F80BE00D8EB2A /* AreaPicker.m */; };
+		D5BC071A1F5F80BE00D8EB2A /* AreaPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BC07181F5F80BE00D8EB2A /* AreaPicker.xib */; };
+		D5BC071C1F5F80CA00D8EB2A /* AreasData.xml in Resources */ = {isa = PBXBuildFile; fileRef = D5BC071B1F5F80CA00D8EB2A /* AreasData.xml */; };
+		D5BC071F1F5F81B300D8EB2A /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC071E1F5F81B300D8EB2A /* ProvinceModel.m */; };
+		D5BC07221F5F81DF00D8EB2A /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC07211F5F81DF00D8EB2A /* CityModel.m */; };
+		D5BC07241F5F820700D8EB2A /* TownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC07231F5F820700D8EB2A /* TownModel.m */; };
+		D5CF0A401F58E868008B1E5D /* DiaryWriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CF0A3F1F58E868008B1E5D /* DiaryWriteView.m */; };
+		D5F3304D1F0DE8BD00014CE9 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F3304B1F0DE8BD00014CE9 /* ListItem.m */; };
+		D5F3304E1F0DE8BD00014CE9 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F3304C1F0DE8BD00014CE9 /* ListItem.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D54A99A01F0C13C900140489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54A997B1F0C13C900140489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54A99821F0C13C900140489;
+			remoteInfo = diary;
+		};
+		D54A99AB1F0C13C900140489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54A997B1F0C13C900140489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54A99821F0C13C900140489;
+			remoteInfo = diary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D51CA788DBDB0664E89BCE3 /* libPods-diary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D65A327DDC92D8800453AFC /* Pods-diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.debug.xcconfig"; sourceTree = "<group>"; };
+		D52E44511F5CEFE300DB5443 /* BaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseUtils.h; path = Utils/BaseUtils.h; sourceTree = "<group>"; };
+		D52E44521F5CF51900DB5443 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebService.h; path = Service/WebService.h; sourceTree = "<group>"; };
+		D52E44531F5CF51900DB5443 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebService.m; path = Service/WebService.m; sourceTree = "<group>"; };
+		D52E44551F5D343800DB5443 /* DiarySettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DiarySettingView.h; path = View/DiarySettingView.h; sourceTree = "<group>"; };
+		D52E44561F5D347000DB5443 /* DiarySettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiarySettingView.m; path = View/DiarySettingView.m; sourceTree = "<group>"; };
+		D53BA9011F5E323800BC978B /* UIView+RGSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RGSize.h"; path = "Extension/UIView+RGSize.h"; sourceTree = "<group>"; };
+		D53BA9021F5E323800BC978B /* UIView+RGSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RGSize.m"; path = "Extension/UIView+RGSize.m"; sourceTree = "<group>"; };
+		D53BA90D1F5E4D4A00BC978B /* PopAlterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PopAlterView.h; path = View/PopAlterView.h; sourceTree = "<group>"; };
+		D53BA9231F5E4DCC00BC978B /* PopAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopAlterView.m; path = View/PopAlterView.m; sourceTree = "<group>"; };
+		D54A99831F0C13C900140489 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54A99871F0C13C900140489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D54A99891F0C13C900140489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D54A998A1F0C13C900140489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D54A99931F0C13C900140489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D54A99951F0C13C900140489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D54A99981F0C13C900140489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D54A999A1F0C13C900140489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54A999F1F0C13C900140489 /* diaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54A99A31F0C13C900140489 /* diaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diaryTests.m; sourceTree = "<group>"; };
+		D54A99A51F0C13C900140489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54A99AA1F0C13C900140489 /* diaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54A99AE1F0C13C900140489 /* diaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diaryUITests.m; sourceTree = "<group>"; };
+		D54A99B01F0C13C900140489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54A99C21F0C4A3900140489 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		D54A99C31F0CE51B00140489 /* DiaryListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryListView.h; path = View/DiaryListView.h; sourceTree = "<group>"; };
+		D54A99C41F0CE5EF00140489 /* DiaryListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryListView.m; path = View/DiaryListView.m; sourceTree = "<group>"; };
+		D555CF901F0F5BC6006A5E10 /* diary.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = diary.db; path = ../../../../../android/myProject/Diary/app/src/main/assets/diary.db; sourceTree = "<group>"; };
+		D555CF931F0F6959006A5E10 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileUtils.m; path = Utils/FileUtils.m; sourceTree = "<group>"; };
+		D555CF951F0F6986006A5E10 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileUtils.h; path = Utils/FileUtils.h; sourceTree = "<group>"; };
+		D555CF961F0FD634006A5E10 /* DiaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryModel.h; path = Model/DiaryModel.h; sourceTree = "<group>"; };
+		D555CF971F0FD6FF006A5E10 /* DiaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryModel.m; path = Model/DiaryModel.m; sourceTree = "<group>"; };
+		D555CF991F0FD931006A5E10 /* DiaryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryService.h; path = Service/DiaryService.h; sourceTree = "<group>"; };
+		D555CF9A1F0FD953006A5E10 /* DiaryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryService.m; path = Service/DiaryService.m; sourceTree = "<group>"; };
+		D555CF9D1F0FE947006A5E10 /* BaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseUtils.m; path = Utils/BaseUtils.m; sourceTree = "<group>"; };
+		D5BC07131F5F80A900D8EB2A /* AreaPickerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AreaPickerService.h; path = Utils/AreaPicker/Service/AreaPickerService.h; sourceTree = "<group>"; };
+		D5BC07141F5F80A900D8EB2A /* AreaPickerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AreaPickerService.m; path = Utils/AreaPicker/Service/AreaPickerService.m; sourceTree = "<group>"; };
+		D5BC07161F5F80BE00D8EB2A /* AreaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AreaPicker.h; path = Utils/AreaPicker/View/AreaPicker.h; sourceTree = "<group>"; };
+		D5BC07171F5F80BE00D8EB2A /* AreaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AreaPicker.m; path = Utils/AreaPicker/View/AreaPicker.m; sourceTree = "<group>"; };
+		D5BC07181F5F80BE00D8EB2A /* AreaPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AreaPicker.xib; path = Utils/AreaPicker/View/AreaPicker.xib; sourceTree = "<group>"; };
+		D5BC071B1F5F80CA00D8EB2A /* AreasData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = AreasData.xml; path = Utils/AreaPicker/Data/AreasData.xml; sourceTree = "<group>"; };
+		D5BC071D1F5F819800D8EB2A /* ProvinceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProvinceModel.h; path = Utils/AreaPicker/Model/ProvinceModel.h; sourceTree = "<group>"; };
+		D5BC071E1F5F81B300D8EB2A /* ProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProvinceModel.m; path = Utils/AreaPicker/Model/ProvinceModel.m; sourceTree = "<group>"; };
+		D5BC07201F5F81CE00D8EB2A /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CityModel.h; path = Utils/AreaPicker/Model/CityModel.h; sourceTree = "<group>"; };
+		D5BC07211F5F81DF00D8EB2A /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityModel.m; path = Utils/AreaPicker/Model/CityModel.m; sourceTree = "<group>"; };
+		D5BC07231F5F820700D8EB2A /* TownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TownModel.m; path = Utils/AreaPicker/Model/TownModel.m; sourceTree = "<group>"; };
+		D5BC07251F5F821800D8EB2A /* TownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TownModel.h; path = Utils/AreaPicker/Model/TownModel.h; sourceTree = "<group>"; };
+		D5CF0A3D1F58E80D008B1E5D /* DiaryWriteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DiaryWriteView.h; path = View/DiaryWriteView.h; sourceTree = "<group>"; };
+		D5CF0A3F1F58E868008B1E5D /* DiaryWriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryWriteView.m; path = View/DiaryWriteView.m; sourceTree = "<group>"; };
+		D5F3304A1F0DE8BD00014CE9 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListItem.h; path = View/ListItem.h; sourceTree = "<group>"; };
+		D5F3304B1F0DE8BD00014CE9 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListItem.m; path = View/ListItem.m; sourceTree = "<group>"; };
+		D5F3304C1F0DE8BD00014CE9 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListItem.xib; path = View/ListItem.xib; sourceTree = "<group>"; };
+		F25ECD1AB8B39866E3887BA1 /* Pods-diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.release.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D54A99801F0C13C900140489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C27D4DCDFEDA68CA1CD6834 /* libPods-diary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A999C1F0C13C900140489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A99A71F0C13C900140489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0FDE0BF32F3903535229DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D51CA788DBDB0664E89BCE3 /* libPods-diary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4702C22F24FB972EAD39557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D65A327DDC92D8800453AFC /* Pods-diary.debug.xcconfig */,
+				F25ECD1AB8B39866E3887BA1 /* Pods-diary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D53BA9001F5E30C300BC978B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D53BA9011F5E323800BC978B /* UIView+RGSize.h */,
+				D53BA9021F5E323800BC978B /* UIView+RGSize.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		D54A997A1F0C13C900140489 = {
+			isa = PBXGroup;
+			children = (
+				D54A99851F0C13C900140489 /* diary */,
+				D54A99A21F0C13C900140489 /* diaryTests */,
+				D54A99AD1F0C13C900140489 /* diaryUITests */,
+				D54A99841F0C13C900140489 /* Products */,
+				B4702C22F24FB972EAD39557 /* Pods */,
+				A0FDE0BF32F3903535229DE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D54A99841F0C13C900140489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54A99831F0C13C900140489 /* diary.app */,
+				D54A999F1F0C13C900140489 /* diaryTests.xctest */,
+				D54A99AA1F0C13C900140489 /* diaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D54A99851F0C13C900140489 /* diary */ = {
+			isa = PBXGroup;
+			children = (
+				D53BA9001F5E30C300BC978B /* Extension */,
+				D555CF8E1F0F5B85006A5E10 /* Data */,
+				D54A99C11F0C49A500140489 /* Utils */,
+				D54A99BF1F0C496900140489 /* Model */,
+				D54A99BE1F0C495700140489 /* Service */,
+				D54A99BD1F0C494C00140489 /* View */,
+				D54A99BC1F0C487400140489 /* Resource */,
+				D54A99C21F0C4A3900140489 /* Config.h */,
+				D54A99891F0C13C900140489 /* AppDelegate.h */,
+				D54A998A1F0C13C900140489 /* AppDelegate.m */,
+				D54A99951F0C13C900140489 /* Assets.xcassets */,
+				D54A99861F0C13C900140489 /* Supporting Files */,
+			);
+			path = diary;
+			sourceTree = "<group>";
+		};
+		D54A99861F0C13C900140489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D54A999A1F0C13C900140489 /* Info.plist */,
+				D54A99871F0C13C900140489 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D54A99A21F0C13C900140489 /* diaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D54A99A31F0C13C900140489 /* diaryTests.m */,
+				D54A99A51F0C13C900140489 /* Info.plist */,
+			);
+			path = diaryTests;
+			sourceTree = "<group>";
+		};
+		D54A99AD1F0C13C900140489 /* diaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D54A99AE1F0C13C900140489 /* diaryUITests.m */,
+				D54A99B01F0C13C900140489 /* Info.plist */,
+			);
+			path = diaryUITests;
+			sourceTree = "<group>";
+		};
+		D54A99BC1F0C487400140489 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D54A99971F0C13C900140489 /* LaunchScreen.storyboard */,
+				D54A99921F0C13C900140489 /* Main.storyboard */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		D54A99BD1F0C494C00140489 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5F3304A1F0DE8BD00014CE9 /* ListItem.h */,
+				D5F3304B1F0DE8BD00014CE9 /* ListItem.m */,
+				D5F3304C1F0DE8BD00014CE9 /* ListItem.xib */,
+				D54A99C31F0CE51B00140489 /* DiaryListView.h */,
+				D54A99C41F0CE5EF00140489 /* DiaryListView.m */,
+				D5CF0A3D1F58E80D008B1E5D /* DiaryWriteView.h */,
+				D5CF0A3F1F58E868008B1E5D /* DiaryWriteView.m */,
+				D52E44551F5D343800DB5443 /* DiarySettingView.h */,
+				D52E44561F5D347000DB5443 /* DiarySettingView.m */,
+				D53BA90D1F5E4D4A00BC978B /* PopAlterView.h */,
+				D53BA9231F5E4DCC00BC978B /* PopAlterView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D54A99BE1F0C495700140489 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D52E44521F5CF51900DB5443 /* WebService.h */,
+				D52E44531F5CF51900DB5443 /* WebService.m */,
+				D555CF991F0FD931006A5E10 /* DiaryService.h */,
+				D555CF9A1F0FD953006A5E10 /* DiaryService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		D54A99BF1F0C496900140489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D555CF961F0FD634006A5E10 /* DiaryModel.h */,
+				D555CF971F0FD6FF006A5E10 /* DiaryModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D54A99C11F0C49A500140489 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC070E1F5F7FF700D8EB2A /* AreaPicker */,
+				D555CF931F0F6959006A5E10 /* FileUtils.m */,
+				D555CF951F0F6986006A5E10 /* FileUtils.h */,
+				D52E44511F5CEFE300DB5443 /* BaseUtils.h */,
+				D555CF9D1F0FE947006A5E10 /* BaseUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D555CF8E1F0F5B85006A5E10 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D555CF901F0F5BC6006A5E10 /* diary.db */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D5BC070E1F5F7FF700D8EB2A /* AreaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC07121F5F802100D8EB2A /* Model */,
+				D5BC07111F5F801700D8EB2A /* Service */,
+				D5BC07101F5F800E00D8EB2A /* View */,
+				D5BC070F1F5F800100D8EB2A /* Data */,
+			);
+			name = AreaPicker;
+			sourceTree = "<group>";
+		};
+		D5BC070F1F5F800100D8EB2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC071B1F5F80CA00D8EB2A /* AreasData.xml */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D5BC07101F5F800E00D8EB2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC07161F5F80BE00D8EB2A /* AreaPicker.h */,
+				D5BC07171F5F80BE00D8EB2A /* AreaPicker.m */,
+				D5BC07181F5F80BE00D8EB2A /* AreaPicker.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D5BC07111F5F801700D8EB2A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC07131F5F80A900D8EB2A /* AreaPickerService.h */,
+				D5BC07141F5F80A900D8EB2A /* AreaPickerService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		D5BC07121F5F802100D8EB2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC071D1F5F819800D8EB2A /* ProvinceModel.h */,
+				D5BC071E1F5F81B300D8EB2A /* ProvinceModel.m */,
+				D5BC07201F5F81CE00D8EB2A /* CityModel.h */,
+				D5BC07211F5F81DF00D8EB2A /* CityModel.m */,
+				D5BC07251F5F821800D8EB2A /* TownModel.h */,
+				D5BC07231F5F820700D8EB2A /* TownModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D54A99821F0C13C900140489 /* diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54A99B31F0C13C900140489 /* Build configuration list for PBXNativeTarget "diary" */;
+			buildPhases = (
+				0085C5EAD8C614722CAF135C /* [CP] Check Pods Manifest.lock */,
+				D54A997F1F0C13C900140489 /* Sources */,
+				D54A99801F0C13C900140489 /* Frameworks */,
+				D54A99811F0C13C900140489 /* Resources */,
+				50E4F9A95E3F452E1A2AEE41 /* [CP] Embed Pods Frameworks */,
+				F2A74B82F881ED952F893DFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = diary;
+			productName = diary;
+			productReference = D54A99831F0C13C900140489 /* diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D54A999E1F0C13C900140489 /* diaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54A99B61F0C13C900140489 /* Build configuration list for PBXNativeTarget "diaryTests" */;
+			buildPhases = (
+				D54A999B1F0C13C900140489 /* Sources */,
+				D54A999C1F0C13C900140489 /* Frameworks */,
+				D54A999D1F0C13C900140489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54A99A11F0C13C900140489 /* PBXTargetDependency */,
+			);
+			name = diaryTests;
+			productName = diaryTests;
+			productReference = D54A999F1F0C13C900140489 /* diaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D54A99A91F0C13C900140489 /* diaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54A99B91F0C13C900140489 /* Build configuration list for PBXNativeTarget "diaryUITests" */;
+			buildPhases = (
+				D54A99A61F0C13C900140489 /* Sources */,
+				D54A99A71F0C13C900140489 /* Frameworks */,
+				D54A99A81F0C13C900140489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54A99AC1F0C13C900140489 /* PBXTargetDependency */,
+			);
+			name = diaryUITests;
+			productName = diaryUITests;
+			productReference = D54A99AA1F0C13C900140489 /* diaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D54A997B1F0C13C900140489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "谢春平";
+				TargetAttributes = {
+					D54A99821F0C13C900140489 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VJUBRKV7K9;
+						ProvisioningStyle = Automatic;
+					};
+					D54A999E1F0C13C900140489 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 37T3KW6GNA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D54A99821F0C13C900140489;
+					};
+					D54A99A91F0C13C900140489 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 37T3KW6GNA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D54A99821F0C13C900140489;
+					};
+				};
+			};
+			buildConfigurationList = D54A997E1F0C13C900140489 /* Build configuration list for PBXProject "diary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54A997A1F0C13C900140489;
+			productRefGroup = D54A99841F0C13C900140489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D54A99821F0C13C900140489 /* diary */,
+				D54A999E1F0C13C900140489 /* diaryTests */,
+				D54A99A91F0C13C900140489 /* diaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D54A99811F0C13C900140489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3304E1F0DE8BD00014CE9 /* ListItem.xib in Resources */,
+				D54A99991F0C13C900140489 /* LaunchScreen.storyboard in Resources */,
+				D555CF921F0F5BC6006A5E10 /* diary.db in Resources */,
+				D54A99961F0C13C900140489 /* Assets.xcassets in Resources */,
+				D5BC071C1F5F80CA00D8EB2A /* AreasData.xml in Resources */,
+				D5BC071A1F5F80BE00D8EB2A /* AreaPicker.xib in Resources */,
+				D54A99941F0C13C900140489 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A999D1F0C13C900140489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A99A81F0C13C900140489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0085C5EAD8C614722CAF135C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E4F9A95E3F452E1A2AEE41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diary/Pods-diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A74B82F881ED952F893DFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-diary/Pods-diary-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diary/Pods-diary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D54A997F1F0C13C900140489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BC07151F5F80A900D8EB2A /* AreaPickerService.m in Sources */,
+				D5BC071F1F5F81B300D8EB2A /* ProvinceModel.m in Sources */,
+				D53BA9241F5E4DCC00BC978B /* PopAlterView.m in Sources */,
+				D5BC07191F5F80BE00D8EB2A /* AreaPicker.m in Sources */,
+				D52E44541F5CF51900DB5443 /* WebService.m in Sources */,
+				D555CF941F0F6959006A5E10 /* FileUtils.m in Sources */,
+				D5F3304D1F0DE8BD00014CE9 /* ListItem.m in Sources */,
+				D555CF9E1F0FE947006A5E10 /* BaseUtils.m in Sources */,
+				D5BC07221F5F81DF00D8EB2A /* CityModel.m in Sources */,
+				D52E44571F5D347000DB5443 /* DiarySettingView.m in Sources */,
+				D5CF0A401F58E868008B1E5D /* DiaryWriteView.m in Sources */,
+				D53BA9031F5E323800BC978B /* UIView+RGSize.m in Sources */,
+				D555CF9B1F0FD953006A5E10 /* DiaryService.m in Sources */,
+				D54A998B1F0C13C900140489 /* AppDelegate.m in Sources */,
+				D555CF981F0FD6FF006A5E10 /* DiaryModel.m in Sources */,
+				D5BC07241F5F820700D8EB2A /* TownModel.m in Sources */,
+				D54A99C51F0CE5EF00140489 /* DiaryListView.m in Sources */,
+				D54A99881F0C13C900140489 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A999B1F0C13C900140489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54A99A41F0C13C900140489 /* diaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54A99A61F0C13C900140489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54A99AF1F0C13C900140489 /* diaryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D54A99A11F0C13C900140489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54A99821F0C13C900140489 /* diary */;
+			targetProxy = D54A99A01F0C13C900140489 /* PBXContainerItemProxy */;
+		};
+		D54A99AC1F0C13C900140489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54A99821F0C13C900140489 /* diary */;
+			targetProxy = D54A99AB1F0C13C900140489 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D54A99921F0C13C900140489 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D54A99931F0C13C900140489 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D54A99971F0C13C900140489 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D54A99981F0C13C900140489 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D54A99B11F0C13C900140489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D54A99B21F0C13C900140489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D54A99B41F0C13C900140489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D65A327DDC92D8800453AFC /* Pods-diary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJUBRKV7K9;
+				INFOPLIST_FILE = diary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D54A99B51F0C13C900140489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25ECD1AB8B39866E3887BA1 /* Pods-diary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJUBRKV7K9;
+				INFOPLIST_FILE = diary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D54A99B71F0C13C900140489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 37T3KW6GNA;
+				INFOPLIST_FILE = diaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diary.app/diary";
+			};
+			name = Debug;
+		};
+		D54A99B81F0C13C900140489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 37T3KW6GNA;
+				INFOPLIST_FILE = diaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diary.app/diary";
+			};
+			name = Release;
+		};
+		D54A99BA1F0C13C900140489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 37T3KW6GNA;
+				INFOPLIST_FILE = diaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = diary;
+			};
+			name = Debug;
+		};
+		D54A99BB1F0C13C900140489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 37T3KW6GNA;
+				INFOPLIST_FILE = diaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.stwms.diaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = diary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D54A997E1F0C13C900140489 /* Build configuration list for PBXProject "diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54A99B11F0C13C900140489 /* Debug */,
+				D54A99B21F0C13C900140489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54A99B31F0C13C900140489 /* Build configuration list for PBXNativeTarget "diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54A99B41F0C13C900140489 /* Debug */,
+				D54A99B51F0C13C900140489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54A99B61F0C13C900140489 /* Build configuration list for PBXNativeTarget "diaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54A99B71F0C13C900140489 /* Debug */,
+				D54A99B81F0C13C900140489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54A99B91F0C13C900140489 /* Build configuration list for PBXNativeTarget "diaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54A99BA1F0C13C900140489 /* Debug */,
+				D54A99BB1F0C13C900140489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D54A997B1F0C13C900140489 /* Project object */;
+}
